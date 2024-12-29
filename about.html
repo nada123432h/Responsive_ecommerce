@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- إضافة روابط CDN الخاصة بالخطوط وBootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Document</title>
+  <style>
+      a:hover {
+          color: rgb(71, 186, 224) !important;
+          text-shadow: 0px 0px 7px beige;
+      }
+
+      .navbar-nav .nav-link {
+          font-size: 20px;
+          text-align: center;
+          font-family: fantasy;
+      }
+
+      .image-container {
+          background-size: cover;
+          background-position: center;
+      }
+
+      .video-overlay {
+          text-shadow: 0px 0px 6px black, 0px 0px 6px black;
+      }
+
+      h1:hover {
+          transform: scale(1.3, 1);
+      }
+
+      span {
+          color: rgb(34, 177, 198);
+          text-shadow: 0px 0px 4px blue;
+      }
+
+      h1 {
+          transition: 1s;
+          transition-delay: .3s;
+      }
+
+      .card-title {
+          font-size: 1.4rem;
+          line-height: 1.2;
+      }
+
+      .card {
+          background-color: rgb(92, 99, 96);
+      }
+  </style>
+</head>
+<body>
+
+
+    <!--header  -->
+    <nav class="navbar navbar-expand-lg bg-secondary d-flex navbar-dark">
+
+        <a class="navbar-brand" style="font-weight: 900; font-size: 30px;" href="#">Ecommerce</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#c">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="c">
+            <ul class="navbar-nav" style="display: flex; justify-content:space-evenly;width: 100%;">
+                <li class="nav-item">
+                    <a class="nav-link" href=
+                    "Project_bootstrap.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Elements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <article>
+        <div class="container d-flex justify-content-center">
+            <div class="row mt-3">
+                <div class="col-12 text-center ">
+                    <h1 style="font-family: Arial, sans-serif; font-weight: bold; color: #333;">To Know More About Us
+                    </h1>
+                    <div class="video-wrapper" style="position: relative;
+            transition: width 0.5s ease; 
+
+border-radius: 30px;
+overflow: hidden;
+           ">
+                        <video class="video-player" height="400" controls style="width: 100%;">
+                            <source src="movie.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+            background-image:radial-gradient( rgba(37, 161, 198, 0.874) 10%, rgba(0, 0, 0, 0.8)80%);
+             display: flex; align-items: center; justify-content: center;
+             color: white; font-size: 24px; font-family: Arial, sans-serif;">
+                            <p style="margin: 0;">Discover More About Our eCommerce Journey</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class=" mt-5">
+        <div class="row d-flex flex-wrap justify-content-center align-items-center">
+          
+          <!-- CEO Card -->
+          <div class="col-lg-3 text-center card p-3 m-1" style="width: 18rem;">
+            <img class="card-img-top" src="images/ceo.jpg" alt="CEO">
+            <div class="card-body text-center ">
+              <h5 class="card-title">John Doe - CEO</h5>
+              <p class="card-text text-white" itemscope itemtype="https://schema.org/Organization">
+                <span itemprop="founder">John</span> 
+                is the visionary leader behind 
+                <span itemprop="name"> EcoCommerce</span>. 
+                With <span >e-commerce</span> expertise, 
+                he has successfully grown the company from a startup to a global brand. 
+                John is committed to driving innovation and ensuring 
+                <span itemprop="brand">customer satisfaction</span> at all levels.
+            </p>
+            
+            </div>
+          </div>
+      
+          <!-- Marketing Director Card -->
+          <div class="col-lg-3 text-center card p-3 m-1" style="width: 18rem;" itemscope itemtype="https://schema.org/Person">
+            <img class="card-img-top" src="images/m1.jpg" alt="Marketing Director" itemprop="image">
+            <div class="card-body text-center">
+              <h5 class="card-title" itemprop="name">Alice Smith - Marketing Director</h5>
+              <p class="card-text text-white">
+                <span itemprop="jobTitle">Marketing Director</span> at 
+                <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+                  <span itemprop="name">EcoCommerce</span>
+                </span>.
+                Alice leads the , crafting campaigns to reach global customers. Her expertise in 
+                <span itemprop="knowsAbout">digital marketing</span> and <span itemprop="knowsAbout">brand strategy</span> has played a key role in the company’s rapid growth and global presence.
+              </p>
+            </div>
+          </div>
+          
+      
+          <!-- Operations Manager Card -->
+          <div class="col-lg-3 text-center card p-3 m-1" style="width: 18rem;" itemscope itemtype="https://schema.org/Person">
+            <img class="card-img-top" src="images/ceo.jpg" alt="Operations Manager" itemprop="image">
+            <div class="card-body text-center">
+              <h5 class="card-title" itemprop="name">Mark Taylor - Operations Manager</h5>
+              <p class="card-text text-white">
+                <span itemprop="jobTitle">Operations Manager</span> at 
+                <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+                  <span itemprop="name">EcoCommerce</span>
+                </span>.
+                Mark ensures smooth daily operations at EcoCommerce. With a keen eye for efficiency, he manages 
+                <span itemprop="knowsAbout">logistics</span>, <span itemprop="knowsAbout">supply chains</span>, and <span itemprop="knowsAbout">customer service</span>, 
+                helping the company meet its maintain high service standards.
+              </p>
+            </div>
+          </div>
+          
+      
+          <!-- Financial Analyst Card -->
+          <div class="col-lg-3 text-center card p-3 m-1" style="width: 18rem;" itemscope itemtype="https://schema.org/Person">
+            <img class="card-img-top" src="images/m2.jpg" alt="Financial Analyst" itemprop="image">
+            <div class="card-body text-center">
+              <h5 class="card-title" itemprop="name">Sara Lee - Financial Analyst</h5>
+              <p class="card-text text-white">
+                <span itemprop="jobTitle">Financial Analyst</span> at 
+                <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+                  <span itemprop="name">EcoCommerce</span>
+                </span>.
+                Sara analyzes the financial , providing valuable insights to guide the company toward sustainable growth. 
+                With a background in <span itemprop="knowsAbout">finance</span> and <span itemprop="knowsAbout">data analysis</span>, 
+                the company’s profitability financial health.
+              </p>
+            </div>
+          </div>
+          
+      
+        </div>
+      </div>
+      <footer id="footer" class="mt-5 bg-secondary text-center" >
+        <div class="container">
+          <div class="row d-flex flex-wrap justify-content-between py-5">
+            <div class="col-md-3 col-sm-6">
+              <div class="footer-menu footer-menu-001">
+                <div class="footer-intro">
+    
+                  <h5> <a href="#">E-shop</a></h5>
+                </div>
+                <p>Gravida massa volutpat aenean odio. Amet, turpis erat nullam fringilla elementum diam in. Nisi, purus
+                  vitae, ultrices nunc. Sit ac sit suscipit hendrerit.</p>
+                <div class="social-links">
+                  <ul class="list-unstyled d-flex flex-wrap gap-3">
+                    <li>
+                      <a href="#" class="text-secondary">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                          <use xlink:href="#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-secondary">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                          <use xlink:href="#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-secondary">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                          <use xlink:href="#youtube"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-secondary">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                          <use xlink:href="#pinterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-secondary">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                          <use xlink:href="#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="footer-menu footer-menu-002">
+                <h5 class="widget-title text-uppercase mb-4">Quick Links</h5>
+                <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+                  <li class="menu-item">
+                    <a href="index.html" class="item-anchor">Home</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="about.html" class="item-anchor">About</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="blog.html" class="item-anchor">Services</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="styles.html" class="item-anchor">Single item</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="item-anchor">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="footer-menu footer-menu-003">
+                <h5 class="widget-title text-uppercase mb-4">Help &amp; Info</h5>
+                <ul class="menu-list list-unstyled text-uppercase border-animation-left fs-6">
+                  <li class="menu-item">
+                    <a href="#" class="item-anchor">Track Your Order</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="item-anchor">Returns + Exchanges</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="item-anchor">Shipping + Delivery</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="item-anchor">Contact Us</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="item-anchor">Find us easy</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="index.html" class="item-anchor">Faqs</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="footer-menu footer-menu-004 border-animation-left">
+                <h5 class="widget-title text-uppercase mb-4">Contact Us</h5>
+                <p>Do you have any questions or suggestions? <a href="mailto:contact@yourcompany.com"
+                    class="item-anchor">contact@yourcompany.com</a></p>
+                <p>Do you need support? Give us a call. <a href="tel:+43 720 11 52 78" class="item-anchor">+43 720 11 52
+                    78</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-top py-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 d-flex flex-wrap">
+                <div class="shipping">
+                  <span>We ship with:</span>
+                  <img src="images/arct-icon.png" alt="icon">
+                  <img src="images/dhl-logo.png" alt="icon">
+                </div>
+                <div class="payment-option">
+                  <span>Payment Option:</span>
+                  <img src="images/visa-card.png" alt="card">
+                  <img src="images/paypal-card.png" alt="card">
+                  <img src="images/master-card.png" alt="card">
+                </div>
+              </div>
+              <div class="col-md-6 text-end">
+                <p>© Copyright 2022 Kaira. All rights reserved. Design by <a href="https://templatesjungle.com"
+                    target="_blank">TemplatesJungle</a> Distribution By <a href="https://themewagon.com"
+                    target="blank">ThemeWagon</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
